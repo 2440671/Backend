@@ -27,8 +27,9 @@ public class AdminServiceImpl implements AdminService {
 
     private final RestTemplate restTemplate;
 
-    private final String PRODUCT_SERVICE_URL = "http://localhost:8095/api/v1/product-service/product";
-    private final String USER_SERVICE_URL = "http://localhost:8092/api/v1/user-service/users";
+    private final String PRODUCT_SERVICE_URL = "http://product-service/api/v1/product-service/product";
+    private final String USER_SERVICE_URL = "http://user-service/api/v1/user-service/users";
+
 
     @Override
     public ProductDTO findById(Long id) {
