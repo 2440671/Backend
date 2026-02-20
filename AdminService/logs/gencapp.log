@@ -1,0 +1,84 @@
+2025-11-12T14:58:33.770+05:30  INFO 27280 --- [analytics-service] [main] o.g.s.A.AdminServiceApplicationTests     : Starting AdminServiceApplicationTests using Java 21 with PID 27280 (started by 2440671 in C:\Users\2440671\genCworkspaces\Sneako\Backend\AdminService)
+2025-11-12T14:58:33.779+05:30  INFO 27280 --- [analytics-service] [main] o.g.s.A.AdminServiceApplicationTests     : No active profile set, falling back to 1 default profile: "default"
+2025-11-12T14:58:35.298+05:30  INFO 27280 --- [analytics-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-12T14:58:35.605+05:30  INFO 27280 --- [analytics-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 278 ms. Found 6 JPA repository interfaces.
+2025-11-12T14:58:35.954+05:30  INFO 27280 --- [analytics-service] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=3305a29a-f210-359c-926e-aebc2532f327
+2025-11-12T14:58:36.373+05:30  INFO 27280 --- [analytics-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-11-12T14:58:36.633+05:30  INFO 27280 --- [analytics-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@92e2c93
+2025-11-12T14:58:36.635+05:30  INFO 27280 --- [analytics-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-11-12T14:58:36.705+05:30  INFO 27280 --- [analytics-service] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-12T14:58:36.846+05:30  INFO 27280 --- [analytics-service] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-11-12T14:58:36.925+05:30  INFO 27280 --- [analytics-service] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-11-12T14:58:37.349+05:30  INFO 27280 --- [analytics-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-12T14:58:37.472+05:30  WARN 27280 --- [analytics-service] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-11-12T14:58:37.488+05:30  INFO 27280 --- [analytics-service] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-12T14:58:37.497+05:30 DEBUG 27280 --- [analytics-service] [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@1614499b) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@1468fc85)
+2025-11-12T14:58:37.497+05:30 DEBUG 27280 --- [analytics-service] [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@47f39279) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@63ed5dae)
+2025-11-12T14:58:37.498+05:30 DEBUG 27280 --- [analytics-service] [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@578198d9) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@4deca78)
+2025-11-12T14:58:37.498+05:30 DEBUG 27280 --- [analytics-service] [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@5f65e0c0) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@566cc6af)
+2025-11-12T14:58:37.498+05:30 DEBUG 27280 --- [analytics-service] [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@d70dbeb) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@7f8f5d37)
+2025-11-12T14:58:37.498+05:30 DEBUG 27280 --- [analytics-service] [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@f9cd1e6) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@3ff53704)
+2025-11-12T14:58:37.498+05:30 DEBUG 27280 --- [analytics-service] [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@34d11c92) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@31b289da)
+2025-11-12T14:58:37.498+05:30 DEBUG 27280 --- [analytics-service] [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@58486deb) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@4e933cf1)
+2025-11-12T14:58:37.498+05:30 DEBUG 27280 --- [analytics-service] [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@729a9c3d) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@574327ed)
+2025-11-12T14:58:39.105+05:30  INFO 27280 --- [analytics-service] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-12T14:58:39.291+05:30  INFO 27280 --- [analytics-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-12T14:58:39.911+05:30  INFO 27280 --- [analytics-service] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-11-12T14:58:41.005+05:30  WARN 27280 --- [analytics-service] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-12T14:58:42.474+05:30  INFO 27280 --- [analytics-service] [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-11-12T14:58:42.524+05:30  WARN 27280 --- [analytics-service] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-11-12T14:58:42.622+05:30  INFO 27280 --- [analytics-service] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-11-12T14:58:42.669+05:30  INFO 27280 --- [analytics-service] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-11-12T14:58:42.673+05:30  INFO 27280 --- [analytics-service] [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-11-12T14:58:42.693+05:30  INFO 27280 --- [analytics-service] [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-11-12T14:58:42.693+05:30  INFO 27280 --- [analytics-service] [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-11-12T14:58:42.693+05:30  INFO 27280 --- [analytics-service] [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-11-12T14:58:42.693+05:30  INFO 27280 --- [analytics-service] [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-11-12T14:58:42.694+05:30  INFO 27280 --- [analytics-service] [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-11-12T14:58:42.694+05:30  INFO 27280 --- [analytics-service] [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-11-12T14:58:42.694+05:30  INFO 27280 --- [analytics-service] [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-11-12T14:58:43.208+05:30  INFO 27280 --- [analytics-service] [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-11-12T14:58:43.210+05:30  INFO 27280 --- [analytics-service] [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-11-12T14:58:43.212+05:30  INFO 27280 --- [analytics-service] [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-11-12T14:58:43.213+05:30  INFO 27280 --- [analytics-service] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1762939723213 with initial instances count: 6
+2025-11-12T14:58:43.216+05:30  INFO 27280 --- [analytics-service] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ANALYTICS-SERVICE with eureka with status UP
+2025-11-12T14:58:43.217+05:30  INFO 27280 --- [analytics-service] [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1762939723217, current=UP, previous=STARTING]
+2025-11-12T14:58:43.220+05:30  INFO 27280 --- [analytics-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANALYTICS-SERVICE/analytics-service:f30467f9ec473dfd0920999b81fb9492: registering service...
+2025-11-12T14:58:43.231+05:30  INFO 27280 --- [analytics-service] [main] o.g.s.A.AdminServiceApplicationTests     : Started AdminServiceApplicationTests in 9.957 seconds (process running for 11.766)
+2025-11-12T14:58:43.296+05:30  INFO 27280 --- [analytics-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANALYTICS-SERVICE/analytics-service:f30467f9ec473dfd0920999b81fb9492 - registration status: 204
+2025-11-12T14:58:43.973+05:30  INFO 27280 --- [analytics-service] [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application ANALYTICS-SERVICE with eureka with status DOWN
+2025-11-12T14:58:43.974+05:30  INFO 27280 --- [analytics-service] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1762939723974, current=DOWN, previous=UP]
+2025-11-12T14:58:43.974+05:30  INFO 27280 --- [analytics-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANALYTICS-SERVICE/analytics-service:f30467f9ec473dfd0920999b81fb9492: registering service...
+2025-11-12T14:58:43.978+05:30  INFO 27280 --- [analytics-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANALYTICS-SERVICE/analytics-service:f30467f9ec473dfd0920999b81fb9492 - registration status: 204
+2025-11-12T14:58:43.981+05:30  INFO 27280 --- [analytics-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-12T14:58:43.985+05:30  INFO 27280 --- [analytics-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-11-12T14:58:43.997+05:30  INFO 27280 --- [analytics-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-11-12T14:58:43.998+05:30  INFO 27280 --- [analytics-service] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-11-12T14:58:47.013+05:30  INFO 27280 --- [analytics-service] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-11-12T14:58:47.050+05:30  INFO 27280 --- [analytics-service] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ANALYTICS-SERVICE/analytics-service:f30467f9ec473dfd0920999b81fb9492 - deregister  status: 200
+2025-11-12T14:58:47.051+05:30  INFO 27280 --- [analytics-service] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-11-12T14:59:27.768+05:30  INFO 12764 --- [analytics-service] [main] o.g.s.AdminService.AdminControllerTest   : Starting AdminControllerTest using Java 21 with PID 12764 (started by 2440671 in C:\Users\2440671\genCworkspaces\Sneako\Backend\AdminService)
+2025-11-12T14:59:27.769+05:30  INFO 12764 --- [analytics-service] [main] o.g.s.AdminService.AdminControllerTest   : No active profile set, falling back to 1 default profile: "default"
+2025-11-12T14:59:30.116+05:30  INFO 12764 --- [analytics-service] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-11-12T14:59:30.117+05:30  INFO 12764 --- [analytics-service] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-11-12T14:59:30.118+05:30  INFO 12764 --- [analytics-service] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2025-11-12T14:59:30.150+05:30  INFO 12764 --- [analytics-service] [main] o.g.s.AdminService.AdminControllerTest   : Started AdminControllerTest in 2.887 seconds (process running for 4.342)
+2025-11-12T15:00:02.966+05:30  INFO 38404 --- [analytics-service] [main] o.g.s.AdminService.AdminControllerTest   : Starting AdminControllerTest using Java 21 with PID 38404 (started by 2440671 in C:\Users\2440671\genCworkspaces\Sneako\Backend\AdminService)
+2025-11-12T15:00:02.968+05:30  INFO 38404 --- [analytics-service] [main] o.g.s.AdminService.AdminControllerTest   : No active profile set, falling back to 1 default profile: "default"
+2025-11-12T15:00:05.445+05:30  INFO 38404 --- [analytics-service] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-11-12T15:00:05.445+05:30  INFO 38404 --- [analytics-service] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-11-12T15:00:05.447+05:30  INFO 38404 --- [analytics-service] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2025-11-12T15:00:05.476+05:30  INFO 38404 --- [analytics-service] [main] o.g.s.AdminService.AdminControllerTest   : Started AdminControllerTest in 3.307 seconds (process running for 5.021)
+2025-11-12T15:03:32.536+05:30  INFO 35988 --- [analytics-service] [main] o.g.s.A.controller.AdminControllerTest   : Starting AdminControllerTest using Java 21 with PID 35988 (started by 2440671 in C:\Users\2440671\genCworkspaces\Sneako\Backend\AdminService)
+2025-11-12T15:03:32.539+05:30  INFO 35988 --- [analytics-service] [main] o.g.s.A.controller.AdminControllerTest   : No active profile set, falling back to 1 default profile: "default"
+2025-11-12T15:03:34.789+05:30  INFO 35988 --- [analytics-service] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-11-12T15:03:34.790+05:30  INFO 35988 --- [analytics-service] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-11-12T15:03:34.791+05:30  INFO 35988 --- [analytics-service] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2025-11-12T15:03:34.820+05:30  INFO 35988 --- [analytics-service] [main] o.g.s.A.controller.AdminControllerTest   : Started AdminControllerTest in 2.852 seconds (process running for 4.424)

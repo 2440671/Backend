@@ -1,0 +1,24 @@
+2025-11-11T09:15:59.874+05:30  WARN 24748 --- [user-service] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16h10m33s794ms56µs899ns).
+2025-11-11T09:19:06.695+05:30  INFO 24748 --- [user-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-11-11T09:24:06.705+05:30  INFO 24748 --- [user-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-11-11T09:29:06.715+05:30  INFO 24748 --- [user-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-11-11T09:32:36.517+05:30  WARN 24748 --- [user-service] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m1s127ms361µs300ns).
+2025-11-11T09:35:38.987+05:30  INFO 24748 --- [user-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-11-11T09:40:38.991+05:30  INFO 24748 --- [user-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-11-11T09:41:04.648+05:30  INFO 24748 --- [user-service] [RMI TCP Connection(333)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-11-11T09:41:04.747+05:30  INFO 24748 --- [user-service] [RMI TCP Connection(333)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application USER-SERVICE with eureka with status DOWN
+2025-11-11T09:41:04.750+05:30  INFO 24748 --- [user-service] [RMI TCP Connection(333)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1762834264750, current=DOWN, previous=UP]
+2025-11-11T09:41:04.753+05:30  INFO 24748 --- [user-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-SERVICE/user-service:20111c38339795d2708a98b187f0d761: registering service...
+2025-11-11T09:41:04.856+05:30  INFO 24748 --- [user-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-SERVICE/user-service:20111c38339795d2708a98b187f0d761 - registration status: 204
+2025-11-11T09:41:04.873+05:30  INFO 24748 --- [user-service] [RMI TCP Connection(333)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-11T09:41:04.920+05:30  INFO 24748 --- [user-service] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-11-11T09:41:04.923+05:30  INFO 24748 --- [user-service] [RMI TCP Connection(333)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-11T09:41:04.937+05:30  INFO 24748 --- [user-service] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-11-11T09:41:04.977+05:30  INFO 24748 --- [user-service] [RMI TCP Connection(333)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-11-11T09:41:05.101+05:30  INFO 24748 --- [user-service] [RMI TCP Connection(333)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-11T09:41:05.148+05:30  INFO 24748 --- [user-service] [RMI TCP Connection(333)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-11-11T09:41:05.170+05:30  INFO 24748 --- [user-service] [RMI TCP Connection(333)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-11-11T09:41:05.175+05:30  INFO 24748 --- [user-service] [RMI TCP Connection(333)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-11-11T09:41:08.192+05:30  INFO 24748 --- [user-service] [RMI TCP Connection(333)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-11-11T09:41:08.301+05:30  INFO 24748 --- [user-service] [RMI TCP Connection(333)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-SERVICE/user-service:20111c38339795d2708a98b187f0d761 - deregister  status: 200
+2025-11-11T09:41:08.303+05:30  INFO 24748 --- [user-service] [RMI TCP Connection(333)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
