@@ -36,10 +36,7 @@ public class GlobalRestAPIExceptionHandler {
         return buildResponse(HttpStatus.INTERNAL_SERVER_ERROR, "Product Deletion Failed", ex.getMessage());
     }
 
-    @ExceptionHandler(OrderUpdateException.class)
-    public ResponseEntity<Object> handleOrderUpdate(OrderUpdateException ex) {
-        return buildResponse(HttpStatus.INTERNAL_SERVER_ERROR, "Order Update Failed", ex.getMessage());
-    }
+
 
     @ExceptionHandler(UserDeleteException.class)
     public ResponseEntity<Object> handleUserDelete(UserDeleteException ex) {

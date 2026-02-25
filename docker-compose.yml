@@ -1,0 +1,89 @@
+version: '3.8'
+
+services:
+
+  mysql:
+    image: mysql:8
+    container_name: mysql-db
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - "3307:3306"
+    volumes:
+      - mysql-data:/var/lib/mysql
+    networks:
+      - ms-network
+
+  eureka-server:
+    image: eurekaservicediscovery
+    container_name: eureka-server
+    ports:
+      - "8761:8761"
+    networks:
+      - ms-network
+
+  apigateway:
+    image: api-gateway
+    container_name: api-gateway
+    ports:
+      - "8081:8081"
+    depends_on:
+      - eureka-server
+    environment:
+      - JWT_AUTH_KEY=cqILQzUjXDulknZmeTTCd3tM/hnUdCN4VvvYJh3NVSY=
+      - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://eureka-server:8761/eureka/
+    networks:
+      - ms-network
+
+  product-service:
+    image: product-management-service
+    container_name: product-management-service
+    ports:
+      - "8095:8095"
+    depends_on:
+      - mysql
+      - eureka-server
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:mysql://mysql:3306/product_db?createDatabaseIfNotExist=true&useSSL=false&allowPublicKeyRetrieval=true
+      - SPRING_DATASOURCE_USERNAME=root
+      - SPRING_DATASOURCE_PASSWORD=root
+      - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://eureka-server:8761/eureka/
+    networks:
+      - ms-network
+
+  user-service:
+    image: user-managemtn-service
+    container_name: user-managemtn-service
+    ports:
+      - "8092:8092"
+    depends_on:
+      - mysql
+      - eureka-server
+    environment:
+      - JWT_AUTH_KEY=cqILQzUjXDulknZmeTTCd3tM/hnUdCN4VvvYJh3NVSY=
+      - SPRING_DATASOURCE_URL=jdbc:mysql://mysql:3306/user_db?createDatabaseIfNotExist=true&useSSL=false&allowPublicKeyRetrieval=true
+      - SPRING_DATASOURCE_USERNAME=root
+      - SPRING_DATASOURCE_PASSWORD=root
+      - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://eureka-server:8761/eureka/
+    networks:
+      - ms-network
+
+  admin-service:
+    image: admin-service
+    container_name: admin-service
+    ports:
+      - "8097:8097"
+    depends_on:
+      - eureka-server
+    environment:
+      - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://eureka-server:8761/eureka/
+    networks:
+      - ms-network
+
+networks:
+  ms-network:
+    driver: bridge
+
+volumes:
+  mysql-data:

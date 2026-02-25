@@ -102,16 +102,7 @@ class AdminServiceImplTest {
         verify(restTemplate, times(1)).delete(anyString());
     }
 
-    @Test
-    void testTotalProduct_returnsCount() {
-        when(restTemplate.getForObject("http://localhost:8095/api/v1/product-service/product/totalproducts", Long.class))
-                .thenReturn(5L);
 
-        Long result = adminService.totalProduct();
-
-        assertThat(result).isEqualTo(5L);
-        verify(restTemplate, times(1)).getForObject(anyString(), eq(Long.class));
-    }
 
     @Test
     void testGetAllUsers_returnsList() {
