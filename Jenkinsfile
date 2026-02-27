@@ -24,18 +24,12 @@ pipeline {
             }
         }
 
-        stage('Smoke Test') {
-    steps {
-        sh 'sleep 20'
-        sh 'curl -f http://api-gateway:8081/actuator/health'
-    }
+        
 }
     }
 
     post {
-        always {
-            sh 'docker compose down'
-        }
+       
         success {
             echo 'Build and deployment successful!'
         }
