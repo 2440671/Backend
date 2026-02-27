@@ -25,10 +25,11 @@ pipeline {
         }
 
         stage('Smoke Test') {
-            steps {
-                sh 'curl -f http://localhost:8081/actuator/health || exit 1'
-            }
-        }
+    steps {
+        sh 'sleep 20'
+        sh 'curl -f http://api-gateway:8081/actuator/health'
+    }
+}
     }
 
     post {
